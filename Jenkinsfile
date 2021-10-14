@@ -4,7 +4,11 @@ pipeline {
 
     PATH = "C:\\WINDOWS\\SYSTEM32"
 
-}
+} tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "MavenDefault"
+    }
+
     stages {
         stage('Cleaning Stage') {
             steps {
